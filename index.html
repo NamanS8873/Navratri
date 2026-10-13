@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="hi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>नवरात्रि – नव दुर्गा</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Tiro+Devanagari+Hindi&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a0509;--bg2:#2b0a12;--card:#3a1019;--gold:#f4c04e;--red:#e0344b;--text:#fbeede;--mute:#c9a99a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:radial-gradient(circle at 50% 0,var(--bg2),var(--bg) 60%);color:var(--text);font-family:Poppins,system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:Cinzel,Georgia,serif;margin:0}
+.hi{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:18px;justify-content:center;padding:12px;background:#1a0509ee;backdrop-filter:blur(8px);border-bottom:1px solid #f4c04e33}
+nav a{color:var(--gold);text-decoration:none;font-size:14px}
+.hero{text-align:center;padding:70px 20px 50px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(38px,9vw,84px);background:linear-gradient(90deg,#ffd877,#e0344b,#ffd877);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200%;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:200%}}
+.hero .hi{font-size:clamp(20px,5vw,32px);color:var(--gold);margin:8px 0}
+.hero p{max-width:640px;margin:14px auto;color:var(--mute)}
+.diya{font-size:56px;animation:fl 2s ease-in-out infinite;filter:drop-shadow(0 0 18px #ffb300)}
+@keyframes fl{50%{transform:scale(1.12) translateY(-4px)}}
+.btn{display:inline-block;margin-top:14px;padding:12px 28px;border-radius:30px;background:linear-gradient(135deg,var(--red),#a3122a);color:#fff;text-decoration:none;box-shadow:0 0 24px #e0344b66}
+section{max-width:1100px;margin:auto;padding:40px 18px}
+h2{text-align:center;color:var(--gold);font-size:clamp(24px,5vw,38px);margin-bottom:8px}
+.sub{text-align:center;color:var(--mute);margin:0 0 28px}
+.why{background:var(--card);border:1px solid #f4c04e33;border-radius:18px;padding:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:linear-gradient(160deg,var(--card),#240810);border:1px solid #f4c04e2a;border-radius:20px;padding:22px 16px;text-align:center;cursor:pointer;transition:.3s;position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 34px color-mix(in srgb,var(--c) 50%,transparent)}
+.card .d{position:absolute;top:10px;left:14px;font-size:12px;color:var(--gold)}
+.orb{width:104px;height:104px;margin:8px auto 12px;border-radius:50%;display:grid;place-items:center;font-size:46px;background:radial-gradient(circle at 35% 30%,#fff8,var(--c) 60%,#0006);box-shadow:0 0 0 4px #f4c04e55,0 0 26px var(--c);animation:fl 4s ease-in-out infinite}
+.card h3{font-size:19px}.card .hi{color:var(--gold);font-size:18px}.card small{color:var(--mute)}
+#modal{position:fixed;inset:0;background:#000c;display:none;z-index:20;overflow:auto;padding:16px}
+#modal.on{display:block}
+.box{max-width:720px;margin:20px auto;background:var(--bg2);border:1px solid var(--gold);border-radius:22px;padding:22px;position:relative}
+.x{position:absolute;top:10px;right:14px;background:none;border:0;color:var(--gold);font-size:30px;cursor:pointer}
+.mh{text-align:center}.mh .orb{width:120px;height:120px;font-size:54px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px 0}
+.tabs button{background:#ffffff10;color:var(--text);border:1px solid #f4c04e44;padding:8px 14px;border-radius:20px;cursor:pointer;font:inherit;font-size:14px}
+.tabs button.on{background:var(--gold);color:#2b0a12}
+.pane{display:none;animation:fi .4s}.pane.on{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}}
+.sl{font-size:20px;line-height:1.9;text-align:center;background:#00000033;border-left:3px solid var(--gold);border-right:3px solid var(--gold);padding:14px;border-radius:12px;margin:10px 0;color:#ffe6a8}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:8px 12px;font-size:15px}.kv b{color:var(--gold)}
+ol{padding-left:20px}li{margin:6px 0}
+footer{text-align:center;padding:30px 16px;color:var(--mute);font-size:13px}
+nav{flex-wrap:wrap;gap:12px}.chal{max-width:720px;margin:auto;text-align:center}.chal p{font-size:19px;line-height:2;margin:0;padding:10px 6px;border-bottom:1px dotted #f4c04e33;color:#ffe6a8}.chal .t{font-size:22px;color:var(--gold);border:0;margin:14px 0}.intro{font-family:Poppins,sans-serif;font-size:15px;color:var(--mute);max-width:620px;margin:0 auto 20px;line-height:1.7}.art{width:min(300px,80%);display:block;margin:0 auto 22px;filter:drop-shadow(0 0 30px #e0344b88);animation:fl 5s ease-in-out infinite}body{font-family:Poppins,'Tiro Devanagari Hindi',system-ui,sans-serif}.mean{font-family:'Tiro Devanagari Hindi',serif;font-size:16px;color:var(--text);background:#ffffff0d;border-radius:10px;padding:10px 14px;margin:6px 0 14px;line-height:1.8;text-align:left}details{font-family:'Tiro Devanagari Hindi',serif;text-align:left;background:#00000033;border:1px solid #f4c04e44;border-radius:12px;padding:10px 14px;margin:0 0 18px;color:var(--text);line-height:1.8}summary{cursor:pointer;color:var(--gold);font-weight:600}details ul{padding-left:18px;margin:8px 0 0}</style></head><body>
+<nav><a href="#home">Home</a><a href="#why">Why Navratri</a><a href="#devi">9 Roop</a><a href="#puja">Puja Path</a><a href="#chalisa">Durga Chalisa</a><a href="#vindhya">Vindhyeshwari</a><a href="#aarti">Ambe Gauri Aarti</a><a href="#adhya">Adhya Shakti Aarti</a><a href="#amrit">Amritwani</a></nav>
+<header class="hero" id="home"><div class="diya">🪔</div><h1>NAVRATRI</h1><div class="hi">॥ जय माता दी ॥</div>
+<p>Nine nights, nine forms of Maa Durga. Tap a Devi to read her birth, purpose, story, shloka and puja path.</p><a class="btn" href="#devi">Meet the Nine Devis</a></header>
+<section id="why"><h2>Why Navratri?</h2><p class="sub">The birth of Durga & her purpose on earth</p>
+<div class="why"><p>The buffalo-demon <b>Mahishasura</b> won a boon from Brahma that no man or god could kill him. Drunk on power, he defeated the Devas and drove them from heaven. In despair they went to Brahma, Vishnu and Shiva. Their anger burst out as blazing light, and the light of all the Devas joined it, taking the form of a radiant woman: <b>Maa Durga</b>. Each god gave her a weapon: Shiva his trident, Vishnu his chakra, Indra his thunderbolt, Himavan a lion to ride.</p>
+<p>For nine nights she fought Mahishasura and his armies, and on the tenth day (Vijayadashami) she slew him. Her mission, and the motto of every one of her forms, is to <b>destroy adharma, protect the devotees, and restore dharma</b> on earth. Each night honours one Navadurga, a different face of the same Shakti.</p></div></section>
+<section id="devi"><h2>Nav Durga</h2><p class="sub">Tap a Devi to open her full story</p><div class="grid" id="grid"></div></section>
+<section id="puja"><h2>Navratri Puja Path</h2><p class="sub">Simple daily vidhi</p><div class="why"><ol>
+<li>Wake early, bathe and wear clean clothes (the Devi's colour of the day is lovely).</li>
+<li>Day 1: sow barley seeds and install the <b>Kalash</b> with a coconut and mango leaves (Ghatasthapana).</li>
+<li>Light a ghee diya and offer red flowers, kumkum, and the day's bhog.</li>
+<li>Chant the day's dhyan shloka and 108 repetitions of the beej mantra.</li>
+<li>Read Durga Saptashati or Durga Chalisa and perform aarti.</li>
+<li>On Ashtami or Navami, do <b>Kanya Pujan</b>: worship nine girls as the nine forms, and feed them puri, chana and halwa.</li></ol>
+<div class="sl hi">या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता ।<br>नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥</div></div></section>
+<section id="chalisa"><h2>Shri Durga Chalisa</h2><p class="sub">॥ श्री दुर्गा चालीसा ॥</p><div class="chal hi">
+<svg class="art" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maa Durga"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffd877"/><stop offset="0.6" stop-color="#e0344b" stop-opacity=".45"/><stop offset="1" stop-color="#e0344b" stop-opacity="0"/></radialGradient></defs><circle cx="150" cy="150" r="145" fill="url(#gl)"/><circle cx="150" cy="100" r="44" fill="none" stroke="#f4c04e" stroke-width="3"/><g stroke="#f1c9a0" stroke-width="9" stroke-linecap="round"><path d="M135 160L70 80M135 170L45 125M135 180L45 175M135 190L70 235M165 160L230 80M165 170L255 125M165 180L255 175M165 190L230 235"/></g><g fill="#f4c04e"><circle cx="70" cy="80" r="9"/><circle cx="45" cy="125" r="9"/><circle cx="45" cy="175" r="9"/><circle cx="70" cy="235" r="9"/><circle cx="230" cy="80" r="9"/><circle cx="255" cy="125" r="9"/><circle cx="255" cy="175" r="9"/><circle cx="230" cy="235" r="9"/></g><path d="M105 330Q110 150 150 140Q190 150 195 330Z" fill="#c1121f"/><path d="M125 150L150 330L175 150Z" fill="#f4c04e" opacity=".35"/><circle cx="150" cy="105" r="28" fill="#f1c9a0"/><path d="M118 95L126 62L138 80L150 54L162 80L174 62L182 95Z" fill="#f4c04e"/><path d="M135 105q5-4 10 0M155 105q5-4 10 0" stroke="#3a1019" stroke-width="2" fill="none"/><circle cx="150" cy="93" r="3" fill="#e0344b"/><path d="M143 119q7 5 14 0" stroke="#c1121f" stroke-width="2" fill="none"/><g fill="#ff8fb1"><ellipse cx="110" cy="325" rx="22" ry="11"/><ellipse cx="150" cy="330" rx="24" ry="12"/><ellipse cx="190" cy="325" rx="22" ry="11"/></g><text x="222" y="322" font-size="44">🦁</text></svg>
+<p class="t">॥ चौपाई ॥</p>
+<p>नमो नमो दुर्गे सुख करनी । नमो नमो अम्बे दुःख हरनी ॥</p>
+<p>निराकार है ज्योति तुम्हारी । तिहूँ लोक फैली उजियारी ॥</p>
+<p>शशि ललाट मुख महाविशाला । नेत्र लाल भृकुटि विकराला ॥</p>
+<p>रूप मातु को अधिक सुहावे । दरश करत जन अति सुख पावे ॥</p>
+<p>तुम संसार शक्ति लै कीना । पालन हेतु अन्न धन दीना ॥</p>
+<p>अन्नपूर्णा हुई जग पाला । तुम ही आदि सुन्दरी बाला ॥</p>
+<p>प्रलयकाल सब नाशन हारी । तुम गौरी शिवशंकर प्यारी ॥</p>
+<p>शिव योगी तुम्हरे गुण गावें । ब्रह्मा विष्णु तुम्हें नित ध्यावें ॥</p>
+<p>रूप सरस्वती को तुम धारा । दे सुबुद्धि ऋषि मुनिन उबारा ॥</p>
+<p>धरयो रूप नरसिंह को अम्बा । परगट भई फाड़कर खम्बा ॥</p>
+<p>रक्षा करि प्रह्लाद बचायो । हिरणाकुश को स्वर्ग पठायो ॥</p>
+<p>लक्ष्मी रूप धरो जग माहीं । श्री नारायण अंग समाहीं ॥</p>
+<p>क्षीरसिन्धु में करत विलासा । दयासिन्धु दीजै मन आसा ॥</p>
+<p>हिंगलाज में तुम्हीं भवानी । महिमा अमित न जात बखानी ॥</p>
+<p>मातंगी अरु धूमावति माता । भुवनेश्वरि बगला सुख दाता ॥</p>
+<p>श्री भैरव तारा जग तारिणि । छिन्न भाल भव दुःख निवारिणि ॥</p>
+<p>केहरि वाहन सोह भवानी । लांगुर वीर चलत अगवानी ॥</p>
+<p>कर में खप्पर खड्ग विराजै । जाको देख काल डर भाजै ॥</p>
+<p>सोहै अस्त्र और त्रिशूला । जाते उठत शत्रु हिय शूला ॥</p>
+<p>नगरकोट में तुम्हीं विराजत । तिहुँलोक में डंका बाजत ॥</p>
+<p>शुम्भ निशुम्भ दानव तुम मारे । रक्तबीज शंखन संहारे ॥</p>
+<p>महिषासुर नृप अति अभिमानी । जेहि अघ भार मही अकुलानी ॥</p>
+<p>रूप कराल कालिका धारा । सेन सहित तुम तिहि संहारा ॥</p>
+<p>परी गाढ़ सन्तन पर जब जब । भई सहाय मातु तुम तब तब ॥</p>
+<p>अमरपुरी अरु बासव लोका । तब महिमा सब रहें अशोका ॥</p>
+<p>ज्वाला में है ज्योति तुम्हारी । तुम्हें सदा पूजें नर-नारी ॥</p>
+<p>प्रेम भक्ति से जो यश गावें । दुःख दरिद्र निकट नहिं आवें ॥</p>
+<p>ध्यावे तुम्हें जो नर मन लाई । जन्म-मरण ताकौ छुटि जाई ॥</p>
+<p>जोगी सुर मुनि कहत पुकारी । योग न हो बिन शक्ति तुम्हारी ॥</p>
+<p>शंकर आचारज तप कीनो । काम अरु क्रोध जीति सब लीनो ॥</p>
+<p>निशिदिन ध्यान धरो शंकर को । काहु काल नहिं सुमिरो तुमको ॥</p>
+<p>शक्ति रूप का मरम न पायो । शक्ति गई तब मन पछितायो ॥</p>
+<p>शरणागत हुई कीर्ति बखानी । जय जय जय जगदम्ब भवानी ॥</p>
+<p>भई प्रसन्न आदि जगदम्बा । दई शक्ति नहिं कीन विलम्बा ॥</p>
+<p>मोको मातु कष्ट अति घेरो । तुम बिन कौन हरै दुःख मेरो ॥</p>
+<p>आशा तृष्णा निपट सतावें । रिपू मुरख मौही डरपावे ॥</p>
+<p>शत्रु नाश कीजै महारानी । सुमिरौं इकचित तुम्हें भवानी ॥</p>
+<p>करो कृपा हे मातु दयाला । ऋद्धि-सिद्धि दै करहु निहाला ॥</p>
+<p>जब लगि जिऊँ दया फल पाऊँ । तुम्हरो यश मैं सदा सुनाऊँ ॥</p>
+<p>दुर्गा चालीसा जो कोई गावै । सब सुख भोग परमपद पावै ॥</p>
+<p>देवीदास शरण निज जानी । करहु कृपा जगदम्ब भवानी ॥</p>
+<p class="t">॥ जय माता दी ॥</p></div></section>
+<section id="vindhya"><h2>Shri Vindhyeshwari Chalisa</h2><p class="sub">॥ श्री विन्ध्येश्वरी चालीसा ॥</p><div class="chal hi">
+<svg class="art" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maa Vindhyeshwari"><defs><radialGradient id="gv"><stop offset="0" stop-color="#ffd877"/><stop offset=".6" stop-color="#ff7a1a" stop-opacity=".45"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/></radialGradient></defs><circle cx="150" cy="140" r="140" fill="url(#gv)"/><path d="M0 340L0 250L60 190L100 230L150 160L200 225L250 180L300 245L300 340Z" fill="#3a1019"/><path d="M0 340L0 285L80 240L130 280L190 235L300 290L300 340Z" fill="#240810"/><circle cx="150" cy="90" r="42" fill="none" stroke="#f4c04e" stroke-width="3"/><g stroke="#f1c9a0" stroke-width="9" stroke-linecap="round"><path d="M135 150L80 100M135 170L70 170M165 150L220 100M165 170L230 170"/></g><g fill="#f4c04e"><circle cx="80" cy="100" r="9"/><circle cx="70" cy="170" r="9"/><circle cx="220" cy="100" r="9"/><circle cx="230" cy="170" r="9"/></g><path d="M220 100L220 40M210 52L220 38L230 52" stroke="#f4c04e" stroke-width="4" fill="none"/><ellipse cx="80" cy="84" rx="10" ry="7" fill="#ff8fb1"/><path d="M108 290Q112 140 150 130Q188 140 192 290Z" fill="#ff7a1a"/><path d="M130 140L150 290L170 140Z" fill="#f4c04e" opacity=".4"/><circle cx="150" cy="96" r="27" fill="#f1c9a0"/><path d="M120 86L127 56L139 72L150 48L161 72L173 56L180 86Z" fill="#f4c04e"/><path d="M137 96q4-4 9 0M154 96q4-4 9 0" stroke="#3a1019" stroke-width="2" fill="none"/><circle cx="150" cy="84" r="3" fill="#e0344b"/><path d="M143 109q7 5 14 0" stroke="#c1121f" stroke-width="2" fill="none"/><ellipse cx="150" cy="298" rx="70" ry="22" fill="#c98b2b"/><text x="118" y="320" font-size="52">🦁</text></svg>
+<div class="intro">Vindhyeshwari, also called Vindhyavasini, is the Devi who dwells in the Vindhya hills at Vindhyachal near Mirzapur, one of the most revered Shakti Peethas. She is remembered as Yogmaya, the Goddess who appeared on Krishna's birth night and then settled in the Vindhya hills, and as the divine mother who fulfils the wishes of her devotees.</div>
+<p class="t">॥ दोहा ॥</p>
+<p>नमो नमो विन्ध्येश्वरी, नमो नमो जगदम्ब ।<br>सन्तजनों के काज में, माँ करती नहीं विलम्ब ॥</p>
+<p class="t">॥ चौपाई ॥</p>
+<p>जय जय जय विन्ध्याचल रानी । आदि शक्ति जग विदित भवानी ॥</p>
+<p>सिंहवाहिनी जै जग माता । जय जय जय त्रिभुवन सुखदाता ॥</p>
+<p>कष्ट निवारिनी जय जग देवी । जय जय जय जय असुरासुर सेवी ॥</p>
+<p>महिमा अमित अपार तुम्हारी । शेष सहस मुख वर्णत हारी ॥</p>
+<p>दीनन के दुःख हरत भवानी । नहिं देख्यो तुम सम कोई दानी ॥</p>
+<p>सब कर मनसा पुरवत माता । महिमा अमित जगत विख्याता ॥</p>
+<p>जो जन ध्यान तुम्हारो लावै । सो तुरतहिं वांछित फल पावै ॥</p>
+<p>तू ही वैष्णवी तू ही रुद्राणी । तू ही शारद अरु ब्रह्माणी ॥</p>
+<p>रमा राधिका श्यामा काली । तू ही माता सन्तन प्रतिपाली ॥</p>
+<p>उमा माधवी चण्डी ज्वाला । बेगि मोहि पर होहु दयाला ॥</p>
+<p>तू ही हिंगलाज महारानी । तू ही शीतला अरु विज्ञानी ॥</p>
+<p>दुर्गा दुर्ग विनाशिनी माता । तू ही लक्ष्मी जग सुखदाता ॥</p>
+<p>तू ही जान्हवी अरु उत्रानी । हेमावती अम्बे निर्वानी ॥</p>
+<p>अष्टभुजी वाराहिनी देवी । करत विष्णु शिव जाकर सेवी ॥</p>
+<p>चौंसट्ठी देवी कल्याणी । गौरी मंगला सब गुण खानी ॥</p>
+<p>पाटन मुम्बा दन्त कुमारी । भद्रकाली सुन विनय हमारी ॥</p>
+<p>वज्रधारिणी शोकनाशिनी । आयु रक्षिणी विन्ध्यवासिनी ॥</p>
+<p>जया और विजया बैताली । माता सुगन्धा अरु विकराली ॥</p>
+<p>नाम अनन्त तुम्हारे भवानी । बरनैं किमि मनुष्य अज्ञानी ॥</p>
+<p>जा पर कृपा मातु तव होई । तो वह करै चहै मन जोई ॥</p>
+<p>कृपा करहु मो पर महारानी । सिद्धि करिय अम्बे मम बानी ॥</p>
+<p>जो नर धरै मातु कर ध्याना । ताकर सदा होय कल्याना ॥</p>
+<p>विपत्ति ताहि सपनेहु नहिं आवै । जो देवी कर जाप करावै ॥</p>
+<p>जो नर कहं ऋण होय अपारा । सो नर पाठ करै शत बारा ॥</p>
+<p>निश्चय ऋण मोचन होई जाई । जो नर पाठ करै मन लाई ॥</p>
+<p>अस्तुति जो नर पढ़े पढ़ावै । या जग में सो बहु सुख पावै ॥</p>
+<p>जाको व्याधि सतावै भाई । जाप करत सब दूरि पराई ॥</p>
+<p>जो नर अति बन्दी महं होई । बार हजार पाठ कर सोई ॥</p>
+<p>निश्चय बन्दी ते छुटि जाई । सत्य वचन मम मानहु भाई ॥</p>
+<p>जा पर जो कछु संकट होई । निश्चय देबिहि सुमिरै सोई ॥</p>
+<p>जो नर पुत्र होय नहिं भाई । सो नर या विधि करे उपाई ॥</p>
+<p>पाँच वर्ष सो पाठ करावै । नौरातर में विप्र जिमावै ॥</p>
+<p>निश्चय होय प्रसन्न भवानी । पुत्र देहि ताकहं गुण खानी ॥</p>
+<p>ध्वजा नारियल आनि चढ़ावै । विधि समेत पूजन करवावै ॥</p>
+<p>नित प्रति पाठ करै मन लाई । प्रेम सहित नहिं आन उपाई ॥</p>
+<p>यह श्री विन्ध्याचल चालीसा । रंक पढ़त होवे अवनीसा ॥</p>
+<p>यह जनि अचरज मानहु भाई । कृपा दृष्टि तापर होई जाई ॥</p>
+<p>जय जय जय जगमातु भवानी । कृपा करहु मो पर जन जानी ॥</p>
+<p class="t">॥ जय माँ विन्ध्यवासिनी ॥</p></div></section>
+<section id="aarti"><h2>Durga Aarti</h2><p class="sub">॥ जय अम्बे गौरी ॥</p><div class="chal hi">
+<svg class="art" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maa Durga aarti"><defs><radialGradient id="ga"><stop offset="0" stop-color="#fff1b8"/><stop offset=".55" stop-color="#f4c04e" stop-opacity=".4"/><stop offset="1" stop-color="#f4c04e" stop-opacity="0"/></radialGradient></defs><circle cx="150" cy="140" r="145" fill="url(#ga)"/><circle cx="150" cy="96" r="46" fill="none" stroke="#e0344b" stroke-width="3"/><g stroke="#f1c9a0" stroke-width="9" stroke-linecap="round"><path d="M135 150L80 95M135 170L60 150M165 150L220 95M165 170L240 150M135 190L95 245M165 190L205 245"/></g><g fill="#f4c04e"><circle cx="80" cy="95" r="9"/><circle cx="60" cy="150" r="9"/><circle cx="220" cy="95" r="9"/><circle cx="240" cy="150" r="9"/></g><path d="M105 300Q110 145 150 135Q190 145 195 300Z" fill="#c1121f"/><path d="M128 145L150 300L172 145Z" fill="#f4c04e" opacity=".35"/><circle cx="150" cy="100" r="28" fill="#f1c9a0"/><path d="M118 90L126 58L138 76L150 50L162 76L174 58L182 90Z" fill="#f4c04e"/><path d="M137 100q4-4 9 0M154 100q4-4 9 0" stroke="#3a1019" stroke-width="2" fill="none"/><circle cx="150" cy="88" r="3" fill="#e0344b"/><path d="M143 113q7 5 14 0" stroke="#c1121f" stroke-width="2" fill="none"/><ellipse cx="150" cy="300" rx="62" ry="14" fill="#c98b2b"/><text x="132" y="296" font-size="34">🪔</text><text x="215" y="325" font-size="44">🦁</text></svg>
+<p class="t">॥ आरती ॥</p>
+<p>जय अम्बे गौरी, मैया जय श्यामा गौरी ।<br>तुमको निशिदिन ध्यावत, हरि ब्रह्मा शिवरी ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>माँग सिन्दूर विराजत, टीको मृगमद को ।<br>उज्ज्वल से दोउ नैना, चन्द्रवदन नीको ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>कनक समान कलेवर, रक्ताम्बर राजै ।<br>रक्तपुष्प गल माला, कण्ठन पर साजै ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>केहरि वाहन राजत, खड्ग खप्पर धारी ।<br>सुर-नर मुनिजन सेवत, तिनके दुखहारी ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>कानन कुण्डल शोभित, नासाग्रे मोती ।<br>कोटिक चन्द्र दिवाकर, राजत सम ज्योति ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>शुम्भ निशुम्भ बिदारे, महिषासुर घाती ।<br>धूम्र विलोचन नैना, निशिदिन मदमाती ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>चण्ड-मुण्ड संहारे, शोणित बीज हरे ।<br>मधु-कैटभ दोउ मारे, सुर भयहीन करे ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>ब्रह्माणी, रुद्राणी, तुम कमला रानी ।<br>आगम-निगम बखानी, तुम शिव पटरानी ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>चौंसठ योगिनि गावत, नृत्य करत भैरूँ ।<br>बाजत ताल मृदंगा, अरु बाजत डमरू ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>तुम ही जग की माता, तुम ही हो भर्ता ।<br>भक्तन की दुःख हर्ता, सुख सम्पत्ति कर्ता ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>भुजा चार अति शोभित, वर-मुद्रा धारी ।<br>मनवांछित फल पावत, सेवत नर नारी ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>कंचन थाल विराजत, अगर कपूर बाती ।<br>श्रीमालकेतु में राजत, कोटि रतन ज्योति ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p>श्री अम्बे जी की आरती, जो कोई नर गावै ।<br>कहत शिवानन्द स्वामी, सुख सम्पत्ति पावै ॥<br>॥ ॐ जय अम्बे गौरी ॥</p>
+<p class="t">॥ बोलो सच्चे दरबार की जय ॥</p></div></section>
+<section id="adhya"><h2>Jay Adhya Shakti Aarti</h2><p class="sub">॥ जय आद्या शक्ति ॥</p><div class="chal hi">
+<svg class="art" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maa Adhya Shakti"><defs><radialGradient id="gd"><stop offset="0" stop-color="#fff1b8"/><stop offset=".55" stop-color="#ff5c8a" stop-opacity=".4"/><stop offset="1" stop-color="#ff5c8a" stop-opacity="0"/></radialGradient></defs><circle cx="150" cy="140" r="145" fill="url(#gd)"/><g fill="#ffd877"><circle cx="150" cy="6" r="5"/><circle cx="60" cy="40" r="5"/><circle cx="240" cy="40" r="5"/><circle cx="20" cy="130" r="5"/><circle cx="280" cy="130" r="5"/></g><circle cx="150" cy="96" r="46" fill="none" stroke="#f4c04e" stroke-width="3"/><g stroke="#f1c9a0" stroke-width="9" stroke-linecap="round"><path d="M135 150L75 90M135 165L55 135M135 180L55 185M135 195L75 240M165 150L225 90M165 165L245 135M165 180L245 185M165 195L225 240"/></g><g fill="#f4c04e"><circle cx="75" cy="90" r="9"/><circle cx="55" cy="135" r="9"/><circle cx="55" cy="185" r="9"/><circle cx="75" cy="240" r="9"/><circle cx="225" cy="90" r="9"/><circle cx="245" cy="135" r="9"/><circle cx="245" cy="185" r="9"/><circle cx="225" cy="240" r="9"/></g><path d="M105 300Q110 145 150 135Q190 145 195 300Z" fill="#d6336c"/><path d="M128 145L150 300L172 145Z" fill="#f4c04e" opacity=".4"/><circle cx="150" cy="100" r="28" fill="#f1c9a0"/><path d="M118 90L126 58L138 76L150 50L162 76L174 58L182 90Z" fill="#f4c04e"/><path d="M137 100q4-4 9 0M154 100q4-4 9 0" stroke="#3a1019" stroke-width="2" fill="none"/><circle cx="150" cy="88" r="3" fill="#e0344b"/><path d="M143 113q7 5 14 0" stroke="#c1121f" stroke-width="2" fill="none"/><ellipse cx="150" cy="305" rx="66" ry="14" fill="#c98b2b"/><text x="132" y="300" font-size="34">🪔</text><text x="215" y="328" font-size="44">🦁</text></svg>
+<div class="intro">Jay Adhya Shakti is the best-loved aarti of Gujarat, sung before the garba on every night of Navratri and in the temples of Maa Ambaji. Each verse praises the Devi on one tithi, from Padva to Purnima. The wording differs a little between printed versions.</div>
+<p class="t">॥ आरती ॥</p>
+<p>जय आद्या शक्ति, मा जय आद्या शक्ति,<br>अखंड ब्रह्मांड निपजाव्यां (२ बार), पडवे प्रगट्यां मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>द्वितीया बेउ स्वरूप, शिवशक्ति जाणुं, मा शिवशक्ति जाणुं,<br>ब्रह्मा गणपति गाये (२ बार), हर गाये हर मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>तृतीया त्रण स्वरूप, त्रिभुवनमां बेठां, मा त्रिभुवनमां बेठां,<br>त्रया थकी तरवेणी (२ बार), तुं तरवेणी मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>चोथे चतुरा महालक्ष्मी, मा सचराचर व्याप्यां, मा सचराचर व्याप्यां,<br>चार भुजा चौ दिशा (२ बार), प्रगट्यां दक्षिणमां।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>पंचमे पंच ऋषि, पंचमी गुण पद्मा, मा पंचमी गुण पद्मा,<br>पंच सहस्त्र त्यां सोहिये (२ बार), पंचे तत्त्वो मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>षष्ठी तुं नारायणी, महिषासुर मार्यो, मा महिषासुर मार्यो,<br>नर नारीना रूपे (२ बार), व्याप्यां सघळे मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>सप्तमी सप्त पाताळ, संध्या सावित्री, मा संध्या सावित्री,<br>गौ गंगा गायत्री (२ बार), गौरी गीता मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>अष्टमी अष्ट भुजा, आई आनंदा, मा आई आनंदा,<br>सुरवर मुनिवर जन्म्या (२ बार), देव दैत्यो मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>नवमी नवकुळ नाग, सेवे नवदुर्गा, मा सेवे नवदुर्गा,<br>नवरात्रिना पूजन, शिवरात्रिना अर्चन, कीधां हर ब्रह्मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>दशमी दश अवतार, जय विजयादशमी, मा जय विजयादशमी,<br>रामे राम रमाड्या (२ बार), रावण रोळ्यो मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>एकादशी अगियारस, कात्यायनी कामा, मा कात्यायनी कामा,<br>कामदुर्गा काळिका (२ बार), श्यामा ने रामा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>बारसे बाळा रूप, बहुचरी अंबा, मा बहुचरी अंबा,<br>बटुक भैरव सोहीए, काळ भैरव सोहीए, तारा छे तुज मा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>तेरसे तुळजा रूप, तमे तारुणी माता, मा तमे तारुणी माता,<br>ब्रह्मा विष्णु सदाशिव (२ बार), गुण तारा गाता।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>चौदशे चौदा रूप, चंडी चामुंडा, मा चंडी चामुंडा,<br>भाव भक्ति कंई आपो, चतुराई कंई आपो, सिंहवाहिनी माता।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>पूनमे कुंभ भर्यो, सांभळजो करुणा, मा सांभळजो करुणा,<br>वशिष्ठ देवे वखाण्यां, मार्कंड देवे वखाण्यां, गाई शुभ कविता।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>संवत सोळ सत्तावन, सोळसें बावीसमां, मा सोळसें बावीसमां,<br>संवत सोळे प्रगट्यां (२ बार), रेवाने तीरे।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>त्रांबावटी नगरी, आई रूपावटी नगरी, मा मंछावटी नगरी,<br>सोळ सहस्त्र त्यां सोहिये (२ बार), क्षमा करो गौरी, मा दया करो गौरी।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>शिवशक्तिनी आरती, जे कोई गाशे, मा जे भावे गाशे,<br>भणे शिवानंद स्वामी, सुख संपत्ति थाशे, हर कैलासे जाशे, मा अंबा दुःख हरशे।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>भाव न जाणुं, भक्ति न जाणुं, नव जाणुं सेवा, मा नव जाणुं सेवा,<br>वल्लभ भट्टने राख्या (२ बार), निज चरणे सेवा।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p>मानो मंडप लाल गुलाल, शोभा बहु सारी, मा शोभा बहु सारी,<br>आंगण कुकड नाचे (२ बार), जय बहुचर बाळी।<br>॥ ॐ जयो जयो मा जगदंबे ॥</p>
+<p class="t">॥ बोलो अंबे माता की जय ॥</p></div></section>
+<section id="amrit"><h2>Durga Amritwani</h2><p class="sub">॥ श्री दुर्गा अमृतवाणी ॥</p><div class="chal">
+<svg class="art" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maa Durga with amrit kalash"><defs><radialGradient id="gm"><stop offset="0" stop-color="#fff1b8"/><stop offset=".55" stop-color="#35b6a0" stop-opacity=".4"/><stop offset="1" stop-color="#35b6a0" stop-opacity="0"/></radialGradient></defs><circle cx="150" cy="140" r="145" fill="url(#gm)"/><circle cx="150" cy="96" r="46" fill="none" stroke="#f4c04e" stroke-width="3"/><g stroke="#f1c9a0" stroke-width="9" stroke-linecap="round"><path d="M135 150L75 90M135 168L55 140M135 186L60 190M135 200L110 245M165 150L225 90M165 168L245 140M165 186L240 190"/></g><g fill="#f4c04e"><circle cx="75" cy="90" r="9"/><circle cx="55" cy="140" r="9"/><circle cx="60" cy="190" r="9"/><circle cx="225" cy="90" r="9"/><circle cx="245" cy="140" r="9"/></g><path d="M105 300Q110 145 150 135Q190 145 195 300Z" fill="#c1121f"/><path d="M128 145L150 300L172 145Z" fill="#f4c04e" opacity=".4"/><circle cx="150" cy="100" r="28" fill="#f1c9a0"/><path d="M118 90L126 58L138 76L150 50L162 76L174 58L182 90Z" fill="#f4c04e"/><path d="M137 100q4-4 9 0M154 100q4-4 9 0" stroke="#3a1019" stroke-width="2" fill="none"/><circle cx="150" cy="88" r="3" fill="#e0344b"/><path d="M143 113q7 5 14 0" stroke="#c1121f" stroke-width="2" fill="none"/><path d="M232 188Q232 215 242 220L258 220Q268 215 268 188Z" fill="#f4c04e"/><path d="M236 188q14-10 28 0" stroke="#ffd877" stroke-width="3" fill="none"/><ellipse cx="150" cy="305" rx="66" ry="14" fill="#c98b2b"/><text x="132" y="300" font-size="34">🪔</text><text x="215" y="328" font-size="44">🦁</text></svg>
+<div class="intro">Durga Amritwani is a popular modern devotional composition in praise of Maa Durga, describing her as the remover of fear, the source of all happiness and the compassionate mother who protects her devotees. It is usually listened to or sung during Navratri.<br><br>Since it is a recent work that is under copyright, the full text is not reproduced here. You can listen to or read the original from its official source:</div>
+<a class="btn" href="https://www.youtube.com/results?search_query=Durga+Amritwani" target="_blank" rel="noopener">Listen to Durga Amritwani</a>
+<p class="t hi">॥ जय माता दी ॥</p></div></section>
+<footer>॥ सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके ॥<br>Made with devotion · Jai Mata Di 🙏</footer>
+<div id="modal"><div class="box"><button class="x" aria-label="Close">×</button><div id="mc"></div></div></div>
+<script>
+const D=[
+{n:"Shailputri",h:"शैलपुत्री",e:"🏔️",c:"#e8e8f0",day:1,ch:"Muladhara (root)",bh:"Pure ghee",col:"White",bj:"ह्रीं शिवायै नमः",
+birth:"Born as the daughter of Himavan, the king of mountains (Shaila). In her previous life she was Sati, who gave up her body in the fire of her father Daksha's yagna when he insulted Shiva. She was reborn to the mountain king to unite again with Shiva.",
+purpose:"To restore Shakti to Shiva and show that devotion survives even death. She gives stability and a firm foundation in life.",
+story:"After Sati's sacrifice, Shiva retreated into deep sorrow. Sati took birth as Parvati, called Shailputri, and from childhood was devoted to Shiva. She rides the bull Nandi, holds a trident in her right hand and a lotus in her left, and a crescent moon adorns her forehead. Worshipping her on day one is said to start the nine nights on firm ground.",
+sl:"वन्दे वाञ्छितलाभाय चन्द्रार्धकृतशेखराम् ।<br>वृषारूढां शूलधरां शैलपुत्रीं यशस्विनीम् ॥"},
+{n:"Brahmacharini",h:"ब्रह्मचारिणी",e:"📿",c:"#e0344b",day:2,ch:"Swadhisthana",bh:"Sugar / mishri",col:"Red",bj:"ह्रीं श्रीं अम्बिकायै नमः",
+birth:"The unmarried, ascetic form of Parvati, in her tapasya phase to win Shiva as her husband.",
+purpose:"To teach perseverance, self-control and the strength of tapasya. She bestows patience and wisdom.",
+story:"Inspired by sage Narada, Parvati vowed to marry only Shiva. She lived on fruits, then leaves, then finally nothing at all for thousands of years, braving storms and heat. Her body grew frail but her resolve never did. The gods and sages praised her penance and promised that Shiva would be hers. She walks barefoot with a japa mala in one hand and a kamandalu in the other.",
+sl:"दधाना करपद्माभ्यामक्षमालाकमण्डलू ।<br>देवी प्रसीदतु मयि ब्रह्मचारिण्यनुत्तमा ॥"},
+{n:"Chandraghanta",h:"चन्द्रघण्टा",e:"🔔",c:"#6c8ff0",day:3,ch:"Manipura",bh:"Kheer / milk sweets",col:"Royal blue",bj:"ऐं श्रीं शक्त्यै नमः",
+birth:"After her marriage to Shiva, Parvati adorned her forehead with a bell-shaped crescent moon (chandra + ghanta) and took this warrior form.",
+purpose:"To destroy demons and negative energy with the sound of her bell, and to bring courage and peace to devotees.",
+story:"Tradition says that when demons terrorised the three worlds, Maa took a golden form with ten arms holding weapons and rode a lion. The ringing of her bell is believed to drive away ghosts and evil spirits. Though fierce towards evil, she is calm and graceful to her devotees.",
+sl:"पिण्डजप्रवरारूढा चण्डकोपास्त्रकैर्युता ।<br>प्रसादं तनुते मह्यं चन्द्रघण्टेति विश्रुता ॥"},
+{n:"Kushmanda",h:"कूष्माण्डा",e:"🌞",c:"#f5a623",day:4,ch:"Anahata",bh:"Malpua",col:"Orange",bj:"ऐं ह्रीं देव्यै नमः",
+birth:"She existed before creation, when the universe was only darkness.",
+purpose:"The creator of the cosmos: with her gentle smile (ku = little, ushma = warmth, anda = cosmic egg) she brought the universe into being. She gives health, energy and prosperity.",
+story:"When nothing existed, Kushmanda smiled softly and a burst of light created the cosmic egg. From her came the sun, planets and all life. She resides in the core of the Sun and is the only deity said to have the power to live there. She has eight arms holding a kamandalu, bow, arrow, lotus, nectar jar, chakra, mace and a japa mala, and she rides a lion.",
+sl:"सुरासम्पूर्णकलशं रुधिराप्लुतमेव च ।<br>दधाना हस्तपद्माभ्यां कूष्माण्डा शुभदास्तु मे ॥"},
+{n:"Skandamata",h:"स्कन्दमाता",e:"🪷",c:"#f2f2f2",day:5,ch:"Vishuddha",bh:"Bananas",col:"Green",bj:"ह्रीं क्लीं स्वामिन्यै नमः",
+birth:"She is Parvati in her motherhood form, called Skandamata as the mother of Skanda (Kartikeya).",
+purpose:"To give the world a divine commander who could destroy the demon Tarakasura, and to show the power of a mother's love.",
+story:"The demon Tarakasura had a boon that only Shiva's son could kill him. From Shiva and Parvati was born Kartikeya, also called Skanda, who became commander of the Devas and slew Tarakasura. Maa is shown seated on a lotus with baby Skanda on her lap, riding a lion. Devotees believe that worshipping her also blesses them with Skanda's grace.",
+sl:"सिंहासनगता नित्यं पद्माश्रितकरद्वया ।<br>शुभदास्तु सदा देवी स्कन्दमाता यशस्विनी ॥"},
+{n:"Katyayani",h:"कात्यायनी",e:"⚔️",c:"#d4381f",day:6,ch:"Ajna (third eye)",bh:"Honey",col:"Grey / red",bj:"क्लीं श्रीं त्रिनेत्राय नमः",
+birth:"Born as the daughter of sage Katyayana, from the combined anger and light of Brahma, Vishnu, Shiva and all the Devas.",
+purpose:"The warrior form born to destroy Mahishasura and establish dharma. She is the fierce protector of devotees.",
+story:"Sage Katyayana performed severe penance to have the Goddess as his daughter. When Mahishasura's terror rose, the gods' energy took the form of Katyayani. She rode a lion and fought him for nine days, and on the tenth day she killed him, earning the name Mahishasuramardini. The gopis of Vrindavan also prayed to her to receive Krishna as husband.",
+sl:"चन्द्रहासोज्ज्वलकरा शार्दूलवरवाहना ।<br>कात्यायनी शुभं दद्याद्देवी दानवघातिनी ॥"},
+{n:"Kalaratri",h:"कालरात्रि",e:"🌑",c:"#4b3a8f",day:7,ch:"Sahasrara (crown)",bh:"Jaggery (gur)",col:"Royal purple",bj:"क्लीं ऐं श्रीं कालिकायै नमः",
+birth:"She took this fiercest form to end the terror of demons when ordinary weapons failed.",
+purpose:"To destroy ignorance, fear and darkness. Though terrifying, she is also called Shubhankari, the giver of auspiciousness.",
+story:"The demons Shumbha, Nishumbha and Raktabija were attacking the gods. Raktabija had a boon that every drop of his blood falling on earth would create another demon like him. Maa Kalaratri, dark as night with wild hair and fire-breathing eyes, rode a donkey and drank every drop of his blood before it could touch the ground, finally destroying him. Her worship removes fear of the dark, enemies and evil forces.",
+sl:"करालवदनां घोरां मुक्तकेशीं चतुर्भुजाम् ।<br>कालरात्रिं करालिंकां दिव्यां विद्युन्माला विभूषिताम् ॥"},
+{n:"Mahagauri",h:"महागौरी",e:"🕊️",c:"#fff3d6",day:8,ch:"Sahasrara / Soma",bh:"Coconut",col:"Pink",bj:"श्रीं क्लीं ह्रीं वरदायै नमः",
+birth:"Parvati after her long penance, when her body had turned dark with dust and sun; Shiva's blessing restored her radiant fair form.",
+purpose:"To purify the sins of devotees and grant peace, beauty and the fulfilment of wishes.",
+story:"After thousands of years of tapasya, Parvati's skin became dark. Pleased, Shiva poured the waters of the Ganga over her, and she became brilliantly white like the moon, jasmine and conch. She is then called Mahagauri. She rides a white bull, holds a trident and damaru, and is worshipped on Ashtami, when Kanya Pujan is also performed.",
+sl:"श्वेते वृषे समारूढा श्वेताम्बरधरा शुचिः ।<br>महागौरी शुभं दद्यान्महादेवप्रमोददा ॥"},
+{n:"Siddhidatri",h:"सिद्धिदात्री",e:"✨",c:"#35b6a0",day:9,ch:"All chakras",bh:"Sesame, puri, halwa, chana",col:"Peacock green",bj:"ह्रीं क्लीं ऐं सिद्धये नमः",
+birth:"The final Navadurga, said to have emerged from the Adi Shakti to grant spiritual powers.",
+purpose:"To bestow the eight siddhis (Anima, Mahima, Garima, Laghima, Prapti, Prakamya, Ishitva, Vashitva) and lead devotees to moksha.",
+story:"The Puranas say Shiva worshipped Siddhidatri and received all the siddhis through her grace. As a result half of Shiva's body became that of the Goddess, which is why he is called Ardhanarishvara. Seated on a lotus (sometimes riding a lion) with four arms, she is worshipped on Navami, completing the nine nights, with Kanya Pujan and havan.",
+sl:"सिद्धगन्धर्वयक्षाद्यैरसुरैरमरैरपि ।<br>सेव्यमाना सदा भूयात् सिद्धिदा सिद्धिदायिनी ॥"}];
+const H=[{n:`माँ शैलपुत्री`,h:`नवरात्रि का प्रथम दिन`,ch:`मूलाधार चक्र`,bh:`शुद्ध गाय का घी`,col:`सफेद`,birth:`पर्वतराज हिमालय (शैल) की पुत्री के रूप में जन्म, इसलिए 'शैलपुत्री'। पूर्वजन्म में वे सती थीं, जिन्होंने पिता दक्ष के यज्ञ में शिवजी का अपमान होने पर देह त्याग दी थी।`,purpose:`शक्ति को पुनः शिव से मिलाना और यह दिखाना कि सच्ची भक्ति मृत्यु से भी नहीं हारती। माँ जीवन में स्थिरता और दृढ़ आधार देती हैं।`,story:`सती के वियोग के बाद शिवजी तपस्या में लीन हो गए। सती ने हिमालय के घर पार्वती के रूप में जन्म लिया और बचपन से शिवजी की भक्त रहीं। माँ वृषभ (नंदी) पर सवार हैं, दाएँ हाथ में त्रिशूल और बाएँ में कमल है, मस्तक पर अर्धचंद्र शोभित है।`,sm:`मैं मनोवांछित फल पाने के लिए उन यशस्विनी शैलपुत्री देवी की वंदना करता हूँ, जिनके मस्तक पर अर्धचंद्र है, जो बैल पर सवार हैं और हाथ में त्रिशूल धारण करती हैं।`,bm:`'ह्रीं' शक्ति का बीज है; 'शिवायै नमः' का अर्थ है शिवस्वरूपा देवी को नमस्कार।`},{n:`माँ ब्रह्मचारिणी`,h:`नवरात्रि का दूसरा दिन`,ch:`स्वाधिष्ठान चक्र`,bh:`चीनी / मिश्री`,col:`लाल`,birth:`ब्रह्मचारिणी पार्वतीजी का तपस्विनी रूप है। 'ब्रह्म' का अर्थ तप और 'चारिणी' का अर्थ आचरण करने वाली। यह शिवजी को पति रूप में पाने की उनकी तपस्या का स्वरूप है।`,purpose:`संयम, धैर्य और तप की शक्ति सिखाना। माँ भक्तों को ज्ञान और कठिनाइयों में डटे रहने का बल देती हैं।`,story:`नारद मुनि की प्रेरणा से पार्वतीजी ने शिवजी को पाने का संकल्प लिया। हजारों वर्षों तक उन्होंने फल-फूल, फिर पत्तों और अंत में निराहार रहकर तप किया। उनका शरीर क्षीण हो गया, पर संकल्प नहीं डिगा। देवताओं और ऋषियों ने प्रसन्न होकर शिवजी की प्राप्ति का आशीर्वाद दिया। माँ के एक हाथ में जपमाला और दूसरे में कमंडल है।`,sm:`जिन्होंने दोनों करकमलों में अक्षमाला और कमंडलु धारण किया है, वे सर्वश्रेष्ठ ब्रह्मचारिणी देवी मुझ पर प्रसन्न हों।`,bm:`'अम्बिकायै नमः' जगत्माता अम्बिका को प्रणाम है; 'ह्रीं' और 'श्रीं' शक्ति और समृद्धि के बीज हैं।`},{n:`माँ चंद्रघंटा`,h:`नवरात्रि का तीसरा दिन`,ch:`मणिपूर चक्र`,bh:`खीर / दूध की मिठाई`,col:`शाही नीला`,birth:`विवाह के बाद पार्वतीजी ने मस्तक पर घंटे के आकार का अर्धचंद्र धारण किया, इसलिए वे चंद्रघंटा कहलाईं।`,purpose:`असुरों और नकारात्मक शक्तियों का नाश करना तथा भक्तों को साहस और शांति देना।`,story:`मान्यता है कि जब दैत्यों ने तीनों लोकों में आतंक मचाया, तब माँ ने दस भुजाओं वाला स्वर्णिम रूप धारण किया और सिंह पर सवार होकर उनका सामना किया। उनके घंटे की ध्वनि से भूत-प्रेत और बुरी शक्तियाँ भाग जाती हैं। दुष्टों के लिए वे उग्र हैं, पर भक्तों के लिए शांत और कल्याणकारी।`,sm:`सिंह पर आरूढ़, प्रचंड क्रोध और अस्त्र-शस्त्रों से युक्त, चंद्रघंटा नाम से प्रसिद्ध देवी मुझ पर कृपा करें।`,bm:`'शक्त्यै नमः' का अर्थ है आदिशक्ति को नमस्कार।`},{n:`माँ कूष्मांडा`,h:`नवरात्रि का चौथा दिन`,ch:`अनाहत चक्र`,bh:`मालपुआ`,col:`नारंगी`,birth:`सृष्टि से पहले जब चारों ओर अंधकार था, तब माँ कूष्मांडा प्रकट हुईं।`,purpose:`ब्रह्मांड की रचना करना। 'कु' का अर्थ थोड़ा, 'ऊष्मा' का अर्थ गर्मी और 'अंड' का अर्थ ब्रह्मांड; अपनी मंद मुस्कान से उन्होंने सृष्टि रची। माँ आरोग्य, ऊर्जा और समृद्धि देती हैं।`,story:`जब कुछ भी नहीं था, माँ ने हल्की-सी मुस्कान की और ब्रह्मांडीय अंडे से सूर्य, ग्रह और सभी जीवों की रचना हुई। मान्यता है कि वे सूर्यमंडल के भीतर निवास करती हैं। उनकी आठ भुजाओं में कमंडल, धनुष, बाण, कमल, अमृत कलश, चक्र, गदा और जपमाला है और वाहन सिंह है।`,sm:`जो अपने दोनों कमल-सदृश हाथों में अमृत से भरा कलश और रक्त से सिंचित कलश धारण करती हैं, वे कूष्मांडा देवी मेरे लिए शुभ फल देने वाली हों।`,bm:`'देव्यै नमः' अर्थात् देवी को नमस्कार; 'ऐं' सरस्वती और 'ह्रीं' शक्ति का बीज है।`},{n:`माँ स्कंदमाता`,h:`नवरात्रि का पाँचवाँ दिन`,ch:`विशुद्ध चक्र`,bh:`केला`,col:`हरा`,birth:`यह पार्वतीजी का मातृस्वरूप है। कार्तिकेय (स्कंद) की माता होने से वे स्कंदमाता कहलाती हैं।`,purpose:`तारकासुर का वध करने वाले देव-सेनापति को जन्म देना और मातृत्व की शक्ति दिखाना।`,story:`तारकासुर को वरदान था कि उसका वध केवल शिव-पुत्र के हाथों होगा। शिव-पार्वती से कार्तिकेय (स्कंद) का जन्म हुआ, जो देवताओं के सेनापति बने और तारकासुर का संहार किया। माँ कमल पर विराजमान हैं, गोद में बालक स्कंद हैं और वाहन सिंह है। मान्यता है कि माँ की पूजा से स्कंद की कृपा भी मिलती है।`,sm:`जो सदा सिंहासन पर विराजमान हैं और जिनके दोनों हाथों में कमल हैं, वे यशस्विनी स्कंदमाता देवी सदा शुभ फल देने वाली हों।`,bm:`'स्वामिन्यै नमः' अर्थात् जगत की स्वामिनी देवी को नमस्कार; 'क्लीं' आकर्षण और कामना-पूर्ति का बीज है।`},{n:`माँ कात्यायनी`,h:`नवरात्रि का छठा दिन`,ch:`आज्ञा चक्र`,bh:`शहद`,col:`धूसर / लाल`,birth:`महर्षि कात्यायन की पुत्री के रूप में प्रकट हुईं; उनका जन्म ब्रह्मा, विष्णु, महेश और सभी देवताओं के तेज से हुआ।`,purpose:`महिषासुर का वध कर धर्म की स्थापना करना और भक्तों की रक्षा करना।`,story:`महर्षि कात्यायन ने देवी को पुत्री रूप में पाने के लिए कठोर तप किया। जब महिषासुर का अत्याचार बढ़ा, तब देवताओं के तेज से कात्यायनी प्रकट हुईं। सिंह पर सवार होकर उन्होंने नौ दिन युद्ध किया और दसवें दिन महिषासुर का वध किया, इसलिए वे महिषासुरमर्दिनी कहलाईं। ब्रज की गोपियों ने भी श्रीकृष्ण को पति रूप में पाने के लिए इनकी पूजा की।`,sm:`जिनके हाथ में चंद्रहास खड्ग चमकता है और जिनका श्रेष्ठ वाहन सिंह है, वे दानवों का नाश करने वाली कात्यायनी देवी मुझे शुभ फल दें।`,bm:`'त्रिनेत्राय नमः' अर्थात् तीन नेत्रों वाली देवी को नमस्कार; 'श्रीं' लक्ष्मी का बीज है।`},{n:`माँ कालरात्रि`,h:`नवरात्रि का सातवाँ दिन`,ch:`सहस्रार चक्र`,bh:`गुड़`,col:`बैंगनी`,birth:`जब साधारण शस्त्रों से दैत्य नहीं मरे, तब माँ ने अपना सबसे उग्र रूप धारण किया।`,purpose:`अज्ञान, भय और अंधकार का नाश करना। भयंकर दिखने पर भी माँ 'शुभंकरी' हैं, यानी सदा शुभ करने वाली।`,story:`शुंभ, निशुंभ और रक्तबीज देवताओं को सता रहे थे। रक्तबीज को वरदान था कि उसके रक्त की हर बूँद धरती पर गिरते ही उसी जैसा नया दैत्य बन जाएगी। रात के समान काली माँ कालरात्रि ने गधे पर सवार होकर उसका सारा रक्त भूमि पर गिरने से पहले पी लिया और उसका संहार किया। माँ की पूजा से भय, शत्रु और बुरी शक्तियाँ दूर होती हैं।`,sm:`विकराल मुख वाली, भयंकर, खुले केशों वाली, चार भुजाओं वाली, बिजली की माला से सुशोभित दिव्य कालरात्रि देवी का मैं ध्यान करता हूँ।`,bm:`'कालिकायै नमः' अर्थात् काली स्वरूपा देवी को नमस्कार; 'क्लीं', 'ऐं' और 'श्रीं' शक्ति, विद्या और समृद्धि के बीज हैं।`},{n:`माँ महागौरी`,h:`नवरात्रि का आठवाँ दिन`,ch:`सहस्रार / सोम चक्र`,bh:`नारियल`,col:`गुलाबी`,birth:`कठोर तपस्या के बाद पार्वतीजी का शरीर धूल-मिट्टी से काला पड़ गया था; शिवजी ने गंगाजल से स्नान कराया तो वे अत्यंत गौर वर्ण की हो गईं।`,purpose:`भक्तों के पाप धोना और शांति, सुंदरता तथा मनोकामना पूर्ति का वरदान देना।`,story:`हजारों वर्षों की तपस्या से पार्वतीजी की त्वचा काली पड़ गई। प्रसन्न होकर शिवजी ने उन पर गंगाजल छिड़का और वे चंद्रमा, कुंद और शंख के समान उज्ज्वल हो गईं, तभी से महागौरी कहलाईं। माँ श्वेत वृषभ पर सवार हैं, हाथों में त्रिशूल और डमरू है। अष्टमी पर इनकी पूजा और कन्या पूजन किया जाता है।`,sm:`श्वेत बैल पर सवार, श्वेत वस्त्र धारण करने वाली, पवित्र महागौरी देवी, जो महादेव को आनंद देने वाली हैं, मुझे शुभ फल दें।`,bm:`'वरदायै नमः' अर्थात् वर देने वाली देवी को नमस्कार।`},{n:`माँ सिद्धिदात्री`,h:`नवरात्रि का नौवाँ दिन`,ch:`सभी चक्र`,bh:`तिल, पूरी, हलवा, चना`,col:`मोरपंखी हरा`,birth:`नवदुर्गाओं में अंतिम रूप; आदिशक्ति से प्रकट होकर भक्तों को सिद्धियाँ देने वाली देवी।`,purpose:`अणिमा, महिमा, गरिमा, लघिमा, प्राप्ति, प्राकाम्य, ईशित्व और वशित्व, इन आठ सिद्धियों को प्रदान करना और भक्तों को मोक्ष की ओर ले जाना।`,story:`पुराणों के अनुसार शिवजी ने सिद्धिदात्री की उपासना की और उनकी कृपा से सभी सिद्धियाँ पाईं। इसी कृपा से उनका आधा शरीर देवी का हो गया, इसलिए वे अर्धनारीश्वर कहलाए। माँ कमल पर विराजमान हैं (कभी सिंह पर भी), चार भुजाएँ हैं। नवमी को इनका पूजन, कन्या पूजन और हवन करके नवरात्रि पूर्ण होती है।`,sm:`सिद्ध, गंधर्व, यक्ष, असुर और देवता सभी जिनकी सदा सेवा करते हैं, वे सिद्धि देने वाली सिद्धिदात्री देवी हमारे लिए सदा सिद्धिदायिनी हों।`,bm:`'सिद्धये नमः' अर्थात् सिद्धि स्वरूपा देवी को नमस्कार।`}];const LG='hi';
+const LBL={hi:{tabs:['जन्म और उद्देश्य','कथा','श्लोक','पूजा पथ'],birth:'जन्म',purpose:'पृथ्वी पर अवतरण का उद्देश्य',dhyan:'ध्यान श्लोक',beej:'बीज मंत्र (१०८ बार जपें)',mean:'अर्थ:',day:'दिन',k:['दिन','चक्र','भोग','रंग','मंत्र'],of:n=>`नौ में से ${n}`,steps:`<li>घी का दीपक जलाकर माँ का चित्र स्थापित करें।</li><li>लाल फूल, कुमकुम और ऊपर लिखा भोग अर्पित करें।</li><li>ध्यान श्लोक पढ़ें, फिर बीज मंत्र का १०८ बार जप करें।</li><li>आरती करके प्रसाद बाँटें।</li>`,stuti:`जो देवी सभी प्राणियों में शक्ति के रूप में स्थित हैं, उन्हें बार-बार नमस्कार है।`}};
+const LB=()=>LBL[LG];
+H.forEach((x,i)=>Object.assign(D[i],x));const g=document.getElementById('grid'),m=document.getElementById('modal'),mc=document.getElementById('mc');
+D.forEach((d,i)=>{const a=document.createElement('div');a.className='card';a.style.setProperty('--c',d.c);
+a.innerHTML=`<span class="d">${LB().day} ${d.day}</span><div class="orb" style="--c:${d.c}">${d.e}</div><h3>${d.n}</h3><div class="hi">${d.h}</div><small>${d.ch}</small>`;
+a.onclick=()=>open(i);g.appendChild(a)});
+function open(i){const d=D[i];mc.innerHTML=`<div class="mh"><div class="orb" style="--c:${d.c}">${d.e}</div><h2>${LB().day} ${d.day}: ${d.n}</h2><div class="hi" style="color:var(--gold);font-size:22px">${d.h}</div></div>
+<div class="tabs">${LB().tabs.map((t,k)=>`<button class="${k?'':'on'}" data-k="${k}">${t}</button>`).join('')}</div>
+<div class="pane on"><h3 style="color:var(--gold)">${LB().birth}</h3><p>${d.birth}</p><h3 style="color:var(--gold)">${LB().purpose}</h3><p>${d.purpose}</p></div>
+<div class="pane"><p>${d.story}</p></div>
+<div class="pane"><p style="text-align:center;color:var(--mute)">${LB().dhyan}</p><div class="sl hi">${d.sl}</div><p class="mean"><b>${LB().mean}</b> ${d.sm}</p><p style="text-align:center;color:var(--mute)">${LB().beej}</p><div class="sl hi">${d.bj}</div><p class="mean"><b>${LB().mean}</b> ${d.bm}</p><div class="sl hi">या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता ।<br>नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥</div></div>
+<div class="pane"><div class="kv"><b>${LB().k[0]}</b><span>${LB().of(d.day)}</span><b>${LB().k[1]}</b><span>${d.ch}</span><b>${LB().k[2]}</b><span>${d.bh}</span><b>${LB().k[3]}</b><span>${d.col}</span><b>${LB().k[4]}</b><span class="hi">${d.bj}</span></div><ol>${LB().steps}</ol></div>`;
+const t=mc.querySelectorAll('.tabs button'),p=mc.querySelectorAll('.pane');
+t.forEach(b=>b.onclick=()=>{t.forEach(x=>x.classList.remove('on'));p.forEach(x=>x.classList.remove('on'));b.classList.add('on');p[b.dataset.k].classList.add('on')});
+mc.querySelectorAll('.sl')[2].insertAdjacentHTML('afterend','<p class="mean"><b>'+LB().mean+'</b> '+LB().stuti+'</p>');m.classList.add('on');m.scrollTop=0;document.body.style.overflow='hidden'}
+function close(){m.classList.remove('on');document.body.style.overflow=''}
+document.querySelector('.x').onclick=close;m.onclick=e=>{if(e.target===m)close()};
+document.onkeydown=e=>{if(e.key==='Escape')close()};
+</script><script>(()=>{const q=s=>document.querySelector(s),T=(s,v)=>{const e=q(s);if(e)e.innerHTML=v},L=a=>a.map(x=>'<li>'+x+'</li>').join(''),B=(s,a)=>{const e=q(s+' svg');if(e)e.insertAdjacentHTML('afterend','<details><summary>📖 भावार्थ (हिंदी में अर्थ)</summary><ul>'+L(a)+'</ul></details>')};document.documentElement.lang='hi';T('nav','<a href="#home">मुख्य</a><a href="#why">नवरात्रि क्यों</a><a href="#devi">नौ रूप</a><a href="#puja">पूजा विधि</a><a href="#chalisa">दुर्गा चालीसा</a><a href="#vindhya">विन्ध्येश्वरी</a><a href="#aarti">अम्बे गौरी आरती</a><a href="#adhya">आद्या शक्ति आरती</a><a href="#amrit">अमृतवाणी</a>');T('.hero h1','नवरात्रि');q('.hero h1').classList.add('hi');T('.hero p','नौ रातें, माँ दुर्गा के नौ रूप। किसी भी देवी पर टैप करें और उनका जन्म, उद्देश्य, कथा, श्लोक तथा पूजा विधि हिंदी अर्थ सहित पढ़ें।');T('.hero .btn','नौ दुर्गा के दर्शन करें');T('#why h2','नवरात्रि क्यों मनाई जाती है?');T('#why .sub','माँ दुर्गा का जन्म और पृथ्वी पर उनका उद्देश्य');T('#why .why','<p>महिषासुर नामक दैत्य को ब्रह्माजी से वरदान मिला था कि कोई पुरुष या देवता उसका वध नहीं कर सकेगा। शक्ति के अहंकार में उसने देवताओं को हराकर स्वर्ग से निकाल दिया। दुखी देवता ब्रह्मा, विष्णु और शिव के पास गए। उनके क्रोध से प्रचंड तेज निकला और सभी देवताओं का तेज उसमें मिल गया; वही तेज एक तेजस्वी नारी के रूप में प्रकट हुआ, <b>माँ दुर्गा</b>। शिवजी ने त्रिशूल, विष्णुजी ने चक्र, इंद्र ने वज्र और हिमालय ने सवारी के लिए सिंह दिया।</p><p>माँ ने नौ रात असुर सेना से युद्ध किया और दसवें दिन (विजयादशमी) महिषासुर का वध किया। माँ के अवतार और उनके हर रूप का उद्देश्य है <b>अधर्म का नाश, भक्तों की रक्षा और धर्म की स्थापना</b>। नवरात्रि की हर रात नवदुर्गा के एक अलग रूप को समर्पित है, जो एक ही शक्ति के नौ चेहरे हैं।</p>');T('#devi h2','नव दुर्गा');T('#devi .sub','किसी भी रूप पर टैप करके पूरी कथा पढ़ें');T('#puja h2','नवरात्रि पूजा विधि');T('#puja .sub','सरल दैनिक पूजा');T('#puja ol',L(['सुबह जल्दी उठकर स्नान करें और स्वच्छ वस्त्र पहनें (उस दिन की देवी का रंग पहनना शुभ माना जाता है)।','पहले दिन जौ बोएँ और आम के पत्तों तथा नारियल के साथ कलश स्थापित करें (घटस्थापना)।','घी का दीपक जलाएँ और लाल फूल, कुमकुम तथा उस दिन का भोग अर्पित करें।','उस दिन का ध्यान श्लोक पढ़ें और बीज मंत्र का १०८ बार जप करें।','दुर्गा सप्तशती या दुर्गा चालीसा का पाठ करें और आरती करें।','अष्टमी या नवमी को <b>कन्या पूजन</b> करें: नौ कन्याओं को नौ देवी रूप मानकर पूजें और पूरी, चना, हलवा खिलाएँ।']));q('#puja .sl').insertAdjacentHTML('afterend','<p class="mean"><b>अर्थ:</b> जो देवी सभी प्राणियों में शक्ति के रूप में स्थित हैं, उन्हें बार-बार नमस्कार है।</p>');T('#chalisa h2','श्री दुर्गा चालीसा');T('#vindhya h2','श्री विन्ध्येश्वरी चालीसा');T('#aarti h2','दुर्गा आरती: जय अम्बे गौरी');T('#adhya h2','जय आद्या शक्ति आरती');T('#amrit h2','दुर्गा अमृतवाणी');T('#vindhya .intro','विन्ध्येश्वरी (विन्ध्यवासिनी) माँ मिर्जापुर के पास विन्ध्याचल पर्वत पर विराजमान हैं और प्रमुख शक्तिपीठों में गिनी जाती हैं। उन्हें योगमाया के रूप में भी माना जाता है, जो श्रीकृष्ण के जन्म की रात प्रकट हुई थीं।');T('#adhya .intro','जय आद्या शक्ति गुजरात की सबसे प्रिय आरती है, जो नवरात्रि की हर रात गरबे से पहले और अम्बाजी के मंदिरों में गाई जाती है। हर पद में पड़वा से पूर्णिमा तक एक-एक तिथि पर माँ के अलग रूप का गुणगान है। छपी पुस्तकों में शब्द थोड़े अलग हो सकते हैं।');T('#amrit .intro','दुर्गा अमृतवाणी माँ दुर्गा की स्तुति में रची गई एक लोकप्रिय आधुनिक भक्ति रचना है, जिसमें माँ को भय हरने वाली, सुख की खान और भक्तों की रक्षा करने वाली करुणामयी माता कहा गया है। नवरात्रि में इसे प्रायः सुना या गाया जाता है।<br><br>यह हाल की रचना है और कॉपीराइट के अंतर्गत है, इसलिए पूरा पाठ यहाँ नहीं दिया गया है। मूल पाठ या गायन आप उसके आधिकारिक स्रोत पर सुन या पढ़ सकते हैं:');T('#amrit .btn','दुर्गा अमृतवाणी सुनें');B('#chalisa',['<b>आरंभ:</b> हे दुर्गा माँ, आपकी जय हो; आप सुख देने और दुःख हरने वाली हैं। आपकी ज्योति निराकार होकर तीनों लोकों में उजाला फैलाती है और आपके रूप के दर्शन से परम सुख मिलता है।','आप ही संसार की शक्ति हैं, अन्नपूर्णा बनकर जग का पालन करती हैं, प्रलय में सबका नाश करती हैं और गौरी रूप में शिवजी की प्रिया हैं। ब्रह्मा, विष्णु और शिव सभी आपका ध्यान करते हैं।','आपने सरस्वती, नरसिंह (प्रह्लाद की रक्षा के लिए), लक्ष्मी और हिंगलाज, मातंगी, भुवनेश्वरी, बगला, तारा आदि अनेक रूप धारण किए।','सिंह पर सवार, हाथ में खप्पर, खड्ग और त्रिशूल लिए आपने शुंभ-निशुंभ, रक्तबीज और महिषासुर का वध किया, और जब-जब संतों पर संकट आया, आपने सहायता की।','जो प्रेम से आपका यश गाता है, उसके पास दुःख-दरिद्रता नहीं आती और उसे जन्म-मरण से मुक्ति मिलती है। शक्ति के बिना योग भी सिद्ध नहीं होता।','<b>प्रार्थना:</b> हे माता, मेरे कष्ट, तृष्णा और शत्रुओं का नाश करें, ऋद्धि-सिद्धि देकर निहाल करें। जो यह चालीसा गाता है, वह सब सुख भोगकर परमपद पाता है।']);B('#vindhya',['माता विन्ध्याचल की रानी, आदिशक्ति और सिंहवाहिनी हैं; वे तीनों लोकों को सुख देने और संकट हरने वाली हैं। शेषनाग भी हजार मुखों से उनकी महिमा नहीं कह पाते।','वे ही वैष्णवी, रुद्राणी, सरस्वती, ब्रह्माणी, लक्ष्मी, काली, चंडी, हिंगलाज, शीतला और दुर्गा आदि सब रूपों में हैं। चौंसठ देवियाँ, भद्रकाली और विन्ध्यवासिनी उन्हीं के रूप हैं।','जिस पर माता की कृपा होती है, उसकी हर इच्छा पूरी होती है। जो माँ का ध्यान और जाप करता है, उसे विपत्ति सपने में भी नहीं आती।','<b>फलश्रुति:</b> ऋण से मुक्ति के लिए सौ बार पाठ, बंधन से छूटने के लिए हजार बार पाठ, और संतान के लिए पाँच वर्ष पाठ तथा नवरात्रि में ब्राह्मण भोज व ध्वजा-नारियल चढ़ाने का विधान बताया गया है। रोग भी जाप से दूर होते हैं।','अंत में कहा गया है कि यह चालीसा रंक को भी राजा बना सकती है। हे जगदंबा माता, मुझ पर कृपा कीजिए।']);B('#aarti',['हे अम्बे गौरी, श्यामा गौरी माँ, हरि, ब्रह्मा और शिव आपका रात-दिन ध्यान करते हैं।','माँग में सिंदूर, माथे पर कस्तूरी का तिलक, उज्ज्वल नेत्र और चंद्रमा जैसा मुख; सोने जैसा शरीर, लाल वस्त्र और लाल फूलों की माला से आप शोभित हैं।','सिंह पर सवार, हाथों में खड्ग और खप्पर लिए आप देवता, मनुष्य और मुनियों के दुःख हरती हैं।','आपने शुंभ-निशुंभ, महिषासुर, चंड-मुंड, रक्तबीज और मधु-कैटभ का संहार कर देवताओं को निर्भय किया।','आप ही ब्रह्माणी, रुद्राणी और लक्ष्मी हैं, जगत की माता और भक्तों के दुःख हरकर सुख-संपत्ति देने वाली हैं। चौंसठ योगिनियाँ गाती हैं और भैरव नृत्य करते हैं।','जो अम्बे जी की यह आरती गाता है, शिवानंद स्वामी कहते हैं, वह सुख-संपत्ति पाता है।']);B('#adhya',['हे आद्या शक्ति माँ, आपने अखंड ब्रह्मांड रचा और पड़वा (प्रतिपदा) के दिन प्रकट हुईं।','हर तिथि का एक रूप: द्वितीया को शिव-शक्ति, तृतीया को त्रिवेणी, चतुर्थी को चार भुजाओं वाली महालक्ष्मी, पंचमी को पंचतत्व, षष्ठी को महिषासुरमर्दिनी नारायणी और सप्तमी को संध्या, सावित्री, गायत्री और गौरी।','अष्टमी को अष्टभुजा आनंदमयी माँ, नवमी को नवदुर्गा और दशमी को विजयादशमी, जब रावण का अंत हुआ। आगे एकादशी से पूर्णिमा तक कात्यायनी, बहुचरी, तुलजा, चंडी और चामुंडा आदि रूपों का स्मरण है।','अंत में भक्त कहता है: मैं भाव, भक्ति और सेवा नहीं जानता, फिर भी हे माँ, मुझे अपने चरणों की सेवा और अपनी दया दीजिए। जो यह आरती गाता है, उसे सुख-संपत्ति मिलती है और दुःख दूर होते हैं।']);T('footer','॥ सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके ॥<br>भक्तिभाव से निर्मित · जय माता दी 🙏')})();</script></body></html>
